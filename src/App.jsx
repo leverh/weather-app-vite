@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Footer from './components/Footer';
 import './App.css';
 
 const WeatherApp = () => {
@@ -408,6 +409,7 @@ const WeatherApp = () => {
             <p className="welcome-text">Search for a city to see current weather conditions</p>
           </div>
         )}
+        <Footer />
       </div>
     </div>
   );

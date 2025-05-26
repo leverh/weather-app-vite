@@ -548,7 +548,42 @@ body {
   font-size: 1.4rem;
 }
 
-/* Responsive Design */
+/* Footer Styles */
+.footer {
+  background: var(--color-card-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.footer a:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 0.2rem;
+}
+
+/* Media Queries */
 @media (max-width: 480px) {
   .weather-container {
     padding: 1.5rem;
@@ -597,5 +632,13 @@ body {
   
   .forecast-icon {
     font-size: 2rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer p {
+    font-size: 1.2rem;
   }
 }
